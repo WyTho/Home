@@ -12,6 +12,19 @@
 
 --	[[	__Functions__ ]]
 
+--  [[  Constants support in LUA  ]]  --
+--  [[  Credits: Andrejs Cainikovs]]  --
+--  [[  Used as Safety measure    ]]  --
+function CreateConstant(tbl)
+    return setmetatable({}, {
+        __index = tbl,
+        __newindex = function(t, key, value)
+            error("attempting to change constant " ..
+                   tostring(key) .. " to " .. tostring(value), 2)
+        end
+    })
+end
+
 --	[[ Converts an integer group address(36374) to a KNX address string(11/11/11)	]] --
 --	[[ Used for remote controlled access	]]--
 function ConvertGroupAddressToString(dbObject)
@@ -53,6 +66,82 @@ function QueryToJSON(dbQuery, filter)
 
     return json
 end
+
+--  [[  Sends a single event directly to an API ]]  --
+--  [[  !Doesn't convert data to JSON ]]  --
+--  [[  !Uses LUA table for request_body  ]]  --
+--  [[  !Tables can only be 1 level deep  ]]  --
+function SendEventToAPI(APISettings, dbData)  
+  if(type(dbData) != 'table'      then return end
+  if(APISettings.ip == nil)       then return end
+  if(APISettings.port == nil)     then return end
+  if(APISettings.endpoint == nil) then return end
+  
+  local APIUrl = APISettings.ip .. ':' .. APISettings.port .. '/' .. APISettings.endpoint
+  require('socket.http')
+  require('ltn12')
+  
+  local request_body = '[['
+  local response_body = {}
+  
+  --  [[  Build request body ]] --
+  for i,v in pairs(dbData) do    
+      request_body = request_body .. i .. '=' .. v .. '&'
+  end  
+  
+  request_body = request_body .. ']]'
+
+  local res, code, response_headers = http.request{
+    url = APIUrl
+    method = "POST", 
+    headers = 
+      {
+          ["Content-Type"] = "application/x-www-form-urlencoded";
+          ["Content-Length"] = #request_body;
+      },
+      source = ltn12.source.string(request_body),
+      sink = ltn12.sink.table(response_body),
+  }  
+end
+
+--  [[  Sends a JSONString to an API  ]]  --
+--  [[  !Doesn't convert data to JSON ]]  --
+--  [[  !Uses string for request body ]]  --
+function SendJSONtoAPI(APISettings, JSONString, JSONName)
+  if(type(JSONString) != 'string' then return end
+  if(APISettings.ip == nil)       then return end
+  if(APISettings.port == nil)     then return end
+  if(APISettings.endpoint == nil) then return end
+  
+  local APIUrl = APISettings.ip .. ':' .. APISettings.port .. '/' .. APISettings.endpoint
+  require('socket.http')
+  require('ltn12')
+  
+  local request_body = '[[' .. JSONName .. '=' .. JSONString .. ']]'
+  local response_body = {}
+
+  local res, code, response_headers = http.request{
+    url = APIUrl
+    method = "POST", 
+    headers = 
+      {
+          ["Content-Type"] = "application/x-www-form-urlencoded";
+          ["Content-Length"] = #request_body;
+      },
+      source = ltn12.source.string(request_body),
+      sink = ltn12.sink.table(response_body),
+  }
+end
+
+--  [[  __Program__ ]]  --
+
+--  [[  Make sure to change these settings  ]]  --
+local APISettings = {
+      ip = '0.0.0.0',
+      port = '80',
+      endpoint = 'event_call'
+}
+APISettings = CreateConstant(APISettings)
 
 --	[[	## Following list contains all important database queries ## ]]	--
 --	[[	*	SELECT name FROM sqlite_master WHERE type="table"	*	]]	--
