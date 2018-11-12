@@ -92,7 +92,7 @@ function SendEventToAPI(APISettings, dbData)
   request_body = request_body .. ']]'
 
   local res, code, response_headers = http.request{
-    url = APIUrl
+    url = APIUrl,
     method = "POST", 
     headers = 
       {
@@ -107,8 +107,8 @@ end
 --  [[  Sends a JSONString to an API  ]]  --
 --  [[  !Doesn't convert data to JSON ]]  --
 --  [[  !Uses string for request body ]]  --
-function SendJSONtoAPI(APISettings, JSONString, JSONName)
-  if(type(JSONString) != 'string' then return end
+function SendJSONtoAPI(APISettings, JSONString)
+  if(type(JSONString) ~= 'string' then return end
   if(APISettings.ip == nil)       then return end
   if(APISettings.port == nil)     then return end
   if(APISettings.endpoint == nil) then return end
@@ -117,20 +117,20 @@ function SendJSONtoAPI(APISettings, JSONString, JSONName)
   require('socket.http')
   require('ltn12')
   
-  local request_body = '[[' .. JSONName .. '=' .. JSONString .. ']]'
+  local request_body = JSONString
   local response_body = {}
 
-  local res, code, response_headers = http.request{
-    url = APIUrl
-    method = "POST", 
-    headers = 
-      {
-          ["Content-Type"] = "application/x-www-form-urlencoded";
-          ["Content-Length"] = #request_body;
-      },
-      source = ltn12.source.string(request_body),
-      sink = ltn12.sink.table(response_body),
-  }
+    local res, code, response_headers = http.request{
+       url = APIUrl,
+        method = "POST",
+        headers =
+        {
+            ["Content-Type"] = "application/x-www-form-urlencoded";
+            ["Content-Length"] = #request_body;
+        },
+        source = ltn12.source.string(request_body),
+        sink = ltn12.sink.table(response_body),
+    }
 end
 
 --  [[  __Program__ ]]  --
@@ -139,7 +139,7 @@ end
 local APISettings = {
       ip = '0.0.0.0',
       port = '80',
-      endpoint = 'event_call'
+      endpoint = 'api/item'
 }
 APISettings = CreateConstant(APISettings)
 
@@ -148,6 +148,9 @@ APISettings = CreateConstant(APISettings)
 --	[[	*	SELECT sql FROM sqlite_master *	]]	--
 --	[[	*	SELECT * FROM objects WHERE name = "Z04 Gang lamp (SW)" LIMIT 1')	*	]]	--
 
-local dbExec = QueryToJSON('SELECT * FROM objects WHERE name = "Z04 Gang lamp (SW)" LIMIT 1',true)
+--  [[  *   SELECT address, name, comment FROM objects  ]]  --
+
+local dbExec = QueryToJSON('SELECT address, name, comment FROM objects',true)
+SendJSONtoAPI(APISettings, dbExec)
 
 log(dbExec)
