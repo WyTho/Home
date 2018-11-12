@@ -151,6 +151,7 @@ APISettings = CreateConstant(APISettings)
 --  [[  *   SELECT address, name, comment FROM objects  ]]  --
 
 local dbExec = QueryToJSON('SELECT address, name, comment FROM objects',true)
+dbExec = ConvertGroupAddressToString(dbExec)
 SendJSONtoAPI(APISettings, dbExec)
 
 log(dbExec)
