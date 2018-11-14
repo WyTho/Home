@@ -1,0 +1,2 @@
+--  [[  FUNCTION EQUIVALENT OF __FILE__ ]]  --
+function __FILE__() return debug.getinfo(2,'S').source end
