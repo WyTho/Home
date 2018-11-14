@@ -72,7 +72,7 @@ end
 --  [[  !Uses LUA table for request_body  ]]  --
 --  [[  !Tables can only be 1 level deep  ]]  --
 function SendEventToAPI(APISettings, dbData)  
-  if(type(dbData) != 'table'      then return end
+  if(type(dbData) ~= 'table'      then return end
   if(APISettings.ip == nil)       then return end
   if(APISettings.port == nil)     then return end
   if(APISettings.endpoint == nil) then return end
