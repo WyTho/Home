@@ -25,6 +25,34 @@ end
 
 function __LINE__() return debug.getinfo(2, 'l').currentline end
 
+--	[[ Converts an integer group address(36374) to a KNX address string(11/11/11)	]] --
+--	[[ Used for remote controlled access	]]--
+function ConvertGroupAddressToString(dbObject)
+    for i, v in pairs(dbObject) do
+        --	[[	3-level KNX address config	]]	--
+        --	[[	main		=	0..31		XX/00/00 	]]  --
+        --	[[	middle	=	0..7		00/XX/00	]] 	--
+        --	[[	sub			=	0..255	00/00/XX	]]	--
+        local main, middle, sub -- Explained above
+        local mainRest, middleRest -- Needed for proper calculation
+        local subMax, middleMax = 256, 8 -- See KNX address config above
+        local vSet = v -- We don't want to directly edit v
+
+        main = math.floor( (v['address'] / subMax) / middleMax)
+        mainRest = ( (v['address'] / subMax) / middleMax ) - main
+
+        middle = math.floor(mainRest * middleMax)
+        middleRest = (mainRest * middleMax) - middle
+
+        sub = middleRest * subMax
+
+        vSet['address'] = main .. '/' .. middle .. '/' .. sub
+
+        dbObject[i] = vSet
+    end
+    return dbObject
+end
+
 --  [[ Compares 2 tables(t1, t2) and returns the differences ]]  --
 --  [[ @return table with differences ]]  --
 function GetTableDiff(t1,t2)
@@ -98,9 +126,10 @@ APISETTINGS = CreateConstant(APISettings)
 STORAGEDETAILS = CreateConstant(STORAGEDETAILS)
 
 currentDevices = db:getall('SELECT id, name, address, comment FROM objects')
+currentDevices = ConvertGroupAddressToString(currentDevices)
 oldDevices = storage.get(STORAGEDETAILS.string)
 if (oldDevices == nil) then 
-  storage.set(STORAGEDETAILS.string)
+  storage.set(STORAGEDETAILS.string, currentDevices)
 else
   if(currentDevices ~= oldDevices) then
     local diff = GetTableDiff(currentDevices, oldDevices)
