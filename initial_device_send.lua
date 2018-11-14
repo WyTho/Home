@@ -18,7 +18,7 @@ function CreateConstant(tbl)
         __index = tbl,
         __newindex = function(t, key, value)
             error("attempting to change constant " ..
-                   tostring(key) .. " to " .. tostring(value), 2)
+                    tostring(key) .. " to " .. tostring(value), 2)
         end
     })
 end
@@ -54,57 +54,56 @@ end
 --  [[  Sends Multiple devices to an API ]]  --
 --  [[  !Converts data to JSON ]]  --
 --  [[  !Uses LUA table for request_body  ]]  --
-function SendItemsToAPI(APISettings, data)  
-  if(type(data) ~= 'table'      then return end
-  if(APISettings.ip == nil)       then return end
-  if(APISettings.port == nil)     then return end
-  if(APISettings.endpoint == nil) then return end
-  
-  require('socket.http')
-  require('ltn12')
-  require('json')
+function SendItemsToAPI(APISettings, data)
+    if(type(data) ~= 'table')      then return end
+    if(APISettings.ip == nil)       then return end
+    if(APISettings.port == nil)     then return end
+    if(APISettings.endpoint == nil) then return end
 
---  [[  Go through database entries updating them 1 by 1  ]]  --
---  [[  TODO: Multiple Items at once(SUPPORT FROM API NEEDED)  ]]  --
-  for i,v in pairs(data) do
-      local APIUrl = string.format('%s:%s/%s', APISettings.ip, APISettings.port,APISettings.endpoint)
-      local request_body, response_body = {}
-      
-      request_body = {v.id, v.name, v.address, v.comment}
-      request_body = json.encode(request_body)
-      
-      local res, code, response_headers = http.request{
-        url = APIUrl,
-        method = "POST", 
-        headers = 
-          {
-              ["Content-Type"] = "application/x-www-form-urlencoded";
-              ["Content-Length"] = #request_body;
-          },
-          source = ltn12.source.string(request_body),
-          sink = ltn12.sink.table(response_body),
-      }
-      
-      if (code ~= 201) then
-        -- TODO: Test this stuff
-        log(string.format('ERROR IN FILE: initial_device_send: %s : API returned code %d with the following response: %s', __LINE__(), code, res))
-        -- return false
-      end
-  end
-  return true
+    local http = require('socket.http')
+    local ltn12 = require('ltn12')
+    require('json')
+
+    --  [[  Go through database entries updating them 1 by 1  ]]  --
+    --  [[  TODO: Multiple Items at once(SUPPORT FROM API NEEDED)  ]]  --
+    for i,v in pairs(data) do
+        local APIUrl = string.format('http://%s:%s/%s', APISettings.ip, APISettings.port,APISettings.endpoint)
+        local request_body, response_body = {}
+
+        request_body = 'name=' .. v.name .. '&address=' .. v.address .. '&comment=' .. v.comment
+        local res, code, response_headers = http.request{
+            url = APIUrl,
+            method = "POST",
+            headers =
+            {
+                ["Content-Type"] = "application/x-www-form-urlencoded";
+                ["Content-Length"] = #request_body;
+            },
+            source = ltn12.source.string(request_body),
+            sink = ltn12.sink.table(response_body),
+        }
+
+        if (code ~= 201) then
+            -- TODO: Test this stuff
+            log(string.format('ERROR IN FILE: initial_device_send: %s : API returned code %s with the following response: %s', 90, code, res))
+            -- return false
+        end
+    end
+    return true
 end
 
 --  [[  __Implementation__  ]]  --
-local APISettings = {
-      ip = '0.0.0.0',
-      port = '80',
-      endpoint = 'api/item'
+local APISETTINGS = {
+    ip = '10.1.1.143',
+    port = '5000',
+    endpoint = 'api/item'
 }
-APISettings = CreateConstant(APISettings)
+APISETTINGS = CreateConstant(APISETTINGS)
 
-devices = db:getall('SELECT id, name, address, comment FROM object')
+devices = db:getall('SELECT id, name, address, comment FROM objects')
 devices = ConvertGroupAddressToString(devices)
 SendItemsToAPI(APISETTINGS, devices) -- needs error checking
+log('SEND DEVICE SCRIPT FINISHED')
 
 
 
