@@ -27,7 +27,5 @@ For the user-guide of the LSS100100 please refer to the following guide: [User G
 All scripts follow a strict timing schedule. If you don't know how to use timing schedules on the LSS100100 please refer to the user-guide posted in [Environment Setup](Environment-Setup)
 
 The following scripts are used with the following time schedule:
-| Script | Time |
-|------|-----:|
-| Initial_Device_send.lua   | One time use |
-| Device_Change_check.lua   | Every 5 minutes |
+> Initial_Device_send.lua | One time use 
+> Device_Change_check.lua | Every 5 minutes
