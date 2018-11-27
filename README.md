@@ -28,6 +28,6 @@ All scripts follow a strict timing schedule. If you don't know how to use timing
 
 The following scripts are used with the following time schedule:
 | Script | Time |
-|------|:-----:|
+|------|-----:|
 | Initial_Device_send.lua   | One time use |
 | Device_Change_check.lua   | Every 5 minutes |
