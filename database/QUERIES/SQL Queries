@@ -1,6 +1,0 @@
-SELECT * FROM , , , objects, visobjects, trends, modbus_devices, scripting, scheduler_holidays, schedulers, enocean_rx, enocean_tx, objectlog, visbuildings, scenes, scene_squence, user_logs, alerts, errors, logs, modbus_profiles, modbus_errors, user_acl, enocean_ep, objecttags
-
-modbus_mapping      EMPTY
-visfloors           visfloors.json
-scheduler_events    EMPTY
-

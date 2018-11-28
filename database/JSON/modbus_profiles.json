@@ -1,0 +1,230 @@
+[
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "SIM10M",
+    "description": "SIM10M"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM3350",
+    "name": "iEM-iEM3350",
+    "description": "Watt-hour Meter iEM3350"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM2150",
+    "name": "iEM-iEM2150",
+    "description": "Watt-hour Meter iEM2150"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "PM710",
+    "name": "PM-PM710",
+    "description": "Power Meter PM710"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "PM5350",
+    "name": "PM-PM5350",
+    "description": "Power Meter PM5350"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM3155",
+    "name": "iEM-iEM3155",
+    "description": "Watt-hour Meter iEM3155"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "PM210",
+    "name": "PM-PM210",
+    "description": "Power Meter PM210"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "TRV00210",
+    "name": "Compact_NSX-Compact_NSX_E",
+    "description": "Distribution Application Type E for NSX"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9XMEA08",
+    "name": "Smartlink-TCP",
+    "description": "Acti9 Smartlink TCP"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM3255",
+    "name": "iEM-iEM3255",
+    "description": "Watt-hour Meter iEM3255"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "METSEPM3250",
+    "name": "PM-PM3250",
+    "description": "Power Meter PM3250"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM5310",
+    "description": "Power Meter PM5310"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM850",
+    "description": "Power Meter PM850"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM870",
+    "description": "Power Meter PM870 series"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM5110",
+    "description": "Power Meter PM5110"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "METSEPM3255",
+    "name": "PM-PM3255",
+    "description": "Power Meter PM3255"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "SE8600",
+    "description": "RTU, Heat pump & IAQ Controller"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9XMSB11",
+    "name": "Smartlink-RTU",
+    "description": "Acti9 Smartlink RTU"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "POWERTAG",
+    "name": "PowerTag",
+    "description": "Wireless Energy Sensor PowerTag"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "IM400",
+    "name": "Vigilohm-Vigilohm_IM400",
+    "description": "Vigilohm IM400"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "SE8300",
+    "description": "Low Voltage FCU Controller"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM3150",
+    "name": "iEM-iEM3150",
+    "description": "Watt-hour Meter iEM3150"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "(EAN13)3606480321689",
+    "name": "Vigilohm-Vigilohm_IM20",
+    "description": "Vigilohm IM20"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM5330",
+    "description": "Power Meter PM5330"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM2155",
+    "name": "iEM-iEM2155",
+    "description": "Watt-hour Meter iEM2155"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM1200",
+    "description": "Power Meter PM1200"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM5111",
+    "description": "Power Meter PM5111"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "PM750",
+    "name": "PM-PM750",
+    "description": "Power Meter PM750"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "Masterpact_NT_NW-Masterpact_P",
+    "description": "Circuit Breaker Manager for Masterpact"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM3355",
+    "name": "iEM-iEM3355",
+    "description": "Watt-hour Meter iEM3355"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "A9MEM3250",
+    "name": "iEM-iEM3250",
+    "description": "Watt-hour Meter iEM3250"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "Masterpact_NT_NW-Masterpact_A",
+    "description": "Circuit Breaker Manager for Masterpact"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM820",
+    "description": "Power Meter PM820"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "SER8300",
+    "description": "Line Voltage FCU Controller"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "PM-PM810",
+    "description": "Power Meter PM810"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "(EAN13)3303430151982",
+    "name": "PM-PM9C",
+    "description": "Power Meter PM9C"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "Masterpact_NT_NW-Masterpact_H",
+    "description": "Circuit Breaker Manager for Masterpact"
+  },
+  {
+    "manufacturer": "Schneider Electric",
+    "product_code": "",
+    "name": "TC303",
+    "description": "Digital Fan Coil Thermostat"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "pincode": "",
+    "id": 4,
+    "name": "Totaal big screen",
+    "sortorder": 1,
+    "parent": 0,
+    "description": ""
+  },
+  {
+    "pincode": "",
+    "id": 7,
+    "name": "Begane grond",
+    "sortorder": 2,
+    "parent": 0,
+    "description": ""
+  }
+]

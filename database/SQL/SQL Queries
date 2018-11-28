@@ -1,0 +1,25 @@
+modbus_mapping      EMPTY
+visfloors           visfloors.json
+scheduler_events    EMPTY
+objects             objects.json
+visobjects          BROKEN JSON
+trends              trends.json
+modbus_devices      EMPTY
+scripting           BROKEN JSON/UNUSABLE
+scheduler_holidays  EMPTY
+schedulers          EMPTY
+enocean_rx          EMPTY
+enocean_tx          EMPTY
+objectlog           objectlog.json
+visbuildings        visbuilding.json
+scenes              scenes.json
+scene_sequence      scene_sequence.json
+user_logs           user_logs.json
+alerts              alerts.json
+errors              errors.json
+logs                logs.json
+modbus_profiles     modbus_profiles.json
+modbus_errors       EMPTY/CAN'T ACCESS
+user_acl            EMPTY/CAN'T ACCESS
+enocean_ep          EMPTY/CAN'T ACCESS
+objecttags          objecttags.json

@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "errortime": 1537187197,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 2,
+    "errortime": 1537187198,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 3,
+    "errortime": 1537189375,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 4,
+    "errortime": 1537189376,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 5,
+    "errortime": 1537189376,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 6,
+    "errortime": 1537189377,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 7,
+    "errortime": 1537189377,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 8,
+    "errortime": 1537189378,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 9,
+    "errortime": 1537189380,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 10,
+    "errortime": 1537189380,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 11,
+    "errortime": 1537189380,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 12,
+    "errortime": 1537189381,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 13,
+    "errortime": 1537189381,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 14,
+    "errortime": 1537189381,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 15,
+    "errortime": 1537189382,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 16,
+    "errortime": 1537189382,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 17,
+    "errortime": 1537189382,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 18,
+    "errortime": 1537189382,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 19,
+    "errortime": 1537189383,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 20,
+    "errortime": 1537189384,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 21,
+    "errortime": 1537189384,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 22,
+    "errortime": 1537189385,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 23,
+    "errortime": 1537189386,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 24,
+    "errortime": 1537189386,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 25,
+    "errortime": 1537189386,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 26,
+    "errortime": 1537189387,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  },
+  {
+    "id": 27,
+    "errortime": 1537189387,
+    "errortext": "User library FBE_Blocks_Time_functions:30: attempt to index local 'input' (a boolean value)nstack traceback:n User library FBE_Blocks_Time_functions:30: in function 'fbe_switch_delay'n User script:7: in main chunk",
+    "scriptname": "Event for Cleaning lock"
+  }
+]

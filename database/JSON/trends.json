@@ -1,0 +1,30 @@
+[
+  {
+    "object": 65799,
+    "id": 3,
+    "precision": 2,
+    "aggregation": "AVERAGE",
+    "created": 1492763415,
+    "sortorder": 1,
+    "count_daily": 730,
+    "show_zero": 0,
+    "type": "G",
+    "count_resolution": 51840,
+    "resolution": 5,
+    "name": "Actuele Temperatuur"
+  },
+  {
+    "object": 65807,
+    "id": 4,
+    "precision": 2,
+    "aggregation": "AVERAGE",
+    "created": 1496740951,
+    "sortorder": 2,
+    "count_daily": 730,
+    "show_zero": 0,
+    "type": "G",
+    "count_resolution": 51840,
+    "resolution": 5,
+    "name": "Gevallen regen"
+  }
+]

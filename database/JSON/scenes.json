@@ -1,0 +1,42 @@
+[
+  {
+    "trig_value": 1,
+    "active": 0,
+    "trig_object": 2305,
+    "id": 2,
+    "name": "Verlichting",
+    "tagcache": ""
+  },
+  {
+    "trig_value": 1,
+    "active": 0,
+    "trig_object": 2306,
+    "id": 3,
+    "name": "Verlichting 2",
+    "tagcache": ""
+  },
+  {
+    "trig_value": 1,
+    "active": 0,
+    "trig_object": 2307,
+    "id": 4,
+    "name": "Alles uit ",
+    "tagcache": ""
+  },
+  {
+    "trig_value": 0,
+    "active": 0,
+    "trig_object": 2305,
+    "id": 5,
+    "name": "Verlichting uit",
+    "tagcache": ""
+  },
+  {
+    "trig_value": 0,
+    "active": 0,
+    "trig_object": 2306,
+    "id": 6,
+    "name": "Verlichting 2 uit",
+    "tagcache": ""
+  }
+]
