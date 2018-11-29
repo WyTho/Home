@@ -1,5 +1,5 @@
 
-![Hometho](https://github.com/wytho/home/misc/images/HomeTho.png "HomeTho Logo")
+![Hometho](https://github.com/WyTho/Home/blob/master/misc/images/HomeTho.png "HomeTho Logo")
 # Home
 Home is a sub-project for team WyTho to connect devices in the Selficient house to the outside world.
 
