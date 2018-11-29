@@ -1,4 +1,4 @@
-INSERT INTO data VALUES
+INSERT INTO scene_sequence VALUES
 (4,2,4104,"true",1,1),
 (5,2,4106,"true",2,1),
 (6,3,4105,"true",1,1),

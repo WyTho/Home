@@ -1,4 +1,4 @@
-INSERT INTO visfloors VALUES(id,background_add,bgcolor,bgfixed,bgrepeat,building,height,background,layout,locx,locy,name,pincode,sortorder,touch_bgcolor,touch_param,type,usermode_param,width)
+INSERT INTO visfloors (id,background_add,bgcolor,bgfixed,bgrepeat,building,height,background,layout,locx,locy,name,pincode,sortorder,touch_bgcolor,touch_param,type,usermode_param,width) VALUES
 (62,"","",0,0,4,1080,"",156,"","","Trend","",3,"","H",NULL,"",1920),
 (63,"","",0,0,4,1080,"",156,"","","Schedulers","",4,"","H",NULL,"",1920),
 (95,"","",0,0,4,1080,"",156,"","","Sonos","",10,"","H",NULL,"",1920),

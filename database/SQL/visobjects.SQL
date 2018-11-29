@@ -1,4 +1,4 @@
-INSERT INTO data VALUES(locy,params_font,statusobject,params_underline,params_width,visparams,params_italic,params_showcontrol,name,notouch,cls,params_color,id,params_height,params_icon_on,params_icon_touch, readonly,params_fixedvalue,object,params_bold,params_pincode,floor,nobg,sortorder,params_displaymode,params_backdrop,locx,type,params_icon_off)
+INSERT INTO visobjects (locy,params_font,statusobject,params_underline,params_width,visparams,params_italic,params_showcontrol,name,notouch,cls,params_color,id,params_height,params_icon_on,params_icon_touch, readonly,params_fixedvalue,object,params_bold,params_pincode,floor,nobg,sortorder,params_displaymode,params_backdrop,locx,type,params_icon_off) VALUES
 (90,"",NULL,0,NULL,NULL,0,NULL,"Laatst gexc3xbcpdate: ",NULL,"","",2105,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,102,1,NULL,NULL,NULL,559,6,NULL),
 (720,"",NULL,0,NULL,NULL,0,NULL,"5 daagse verwachting Nederland",NULL,"","",2106,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,102,1,NULL,NULL,NULL,633,6,NULL),
 (145,NULL,129281,0,332,"",0,0,"",0,"darkimage",NULL,2163,265,"Verlichting_leeg_A.gif","",1,"0",129281,0,"",102,1,1,"icon",0,0,0,"Verlichting_leeg_NA.gif"),

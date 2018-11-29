@@ -1,4 +1,4 @@
-INSERT INTO objectlog VALUES(id,src,address,datahex,logtime,eventtype,sender)
+INSERT INTO objectlog (id,src,address,datahex,logtime,eventtype,sender) VALUES
 (1,0,4104,1,1495636172.11615,"write","us"),
 (2,4550,4104,1,1495636172.20866,"write","bus"),
 (3,4550,4104,1,1495636172.29823,"write","bus"),

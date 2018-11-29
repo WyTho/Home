@@ -1,25 +1,25 @@
 modbus_mapping      EMPTY
-visfloors           visfloors.json
+visfloors           visfloors.json          IMPORTED INTO Homelynk_DB.db
 scheduler_events    EMPTY
-objects             objects.json
-visobjects          BROKEN JSON
-trends              trends.json
+objects             objects.json            IMPORTED INTO Homelynk_DB.db
+visobjects          BROKEN JSON             COULDNT IMPORT
+trends              trends.json             IMPORTED INTO Homelynk_DB.db
 modbus_devices      EMPTY
-scripting           BROKEN JSON/UNUSABLE
+scripting           BROKEN JSON/UNUSABLE    COULDNT IMPORT
 scheduler_holidays  EMPTY
 schedulers          EMPTY
 enocean_rx          EMPTY
 enocean_tx          EMPTY
-objectlog           objectlog.json
-visbuildings        visbuilding.json
-scenes              scenes.json
-scene_sequence      scene_sequence.json
-user_logs           user_logs.json
-alerts              alerts.json
-errors              errors.json
-logs                logs.json
-modbus_profiles     modbus_profiles.json
+objectlog           objectlog.json          IMPORTED INTO Homelynk_DB.db
+visbuildings        visbuilding.json        IMPORTED INTO Homelynk_DB.db
+scenes              scenes.json             IMPORTED INTO Homelynk_DB.db
+scene_sequence      scene_sequence.json     IMPORTED INTO Homelynk_DB.db
+user_logs           user_logs.json          IMPORTED INTO Homelynk_DB.db
+alerts              alerts.json             IMPORTED INTO Homelynk_DB.db
+errors              errors.json             IMPORTED INTO Homelynk_DB.db
+logs                logs.json               IMPORTED INTO Homelynk_DB.db
+modbus_profiles     modbus_profiles.json    IMPORTED INTO Homelynk_DB.db
 modbus_errors       EMPTY/CAN'T ACCESS
 user_acl            EMPTY/CAN'T ACCESS
 enocean_ep          EMPTY/CAN'T ACCESS
-objecttags          objecttags.json
+objecttags          objecttags.json         IMPORTED INTO Homelynk_DB.db

@@ -1,4 +1,4 @@
-INSERT INTO user_logs VALUES(id,login,ip,created,failed)
+INSERT INTO user_logs (id,login,ip,created,failed) VALUES
 (2193,"admin","192.168.2.31",1493819409,NULL),
 (2194,"admin","192.168.2.31",1493819410,NULL),
 (2195,"admin","192.168.2.31",1493819410,NULL),
