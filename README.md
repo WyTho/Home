@@ -13,13 +13,13 @@ This project includes scripts to read information from the LSS100100 to a connec
  * Please visit github.com/wytho for the full scope of our project
 
 # Table of contents
-* [Support](Support)
-* [Environment Setup](Environment-setup)
-* [Running Scripts](Running-scripts)
-* [Debugging](Debugging)
-    - [TCP Data Receiver](TCP-Data-Receiver)
-    - [LSS100100 Internal Database](LSS100100-internal-database)
-* [License](License)
+* [Support](#Support)
+* [Environment Setup](#Environment-setup)
+* [Running Scripts](#Running-scripts)
+* [Debugging](#Debugging)
+    - [TCP Data Receiver](#TCP-Data-Receiver)
+    - [LSS100100 Internal Database](#LSS100100-internal-database)
+* [License](#License)
 
 ## Support
 Any issues, bugs or any other information requests can be answered by filing an issue report. For quick response it's advised to send an email to the following email address: [maikel.bolderdijk@gmail.com](mailto:maikel.bolderdijk@student.hu.nl).
