@@ -82,3 +82,6 @@ __IT IS ADVISED TO NOT USE THIS FUNCTION IN THE FUTURE AND FIND OTHER WAYS OF RE
 
 An example of the internal database can be found in the folder: __database__.
 
+## License
+MIT
+
