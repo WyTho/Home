@@ -1,0 +1,1777 @@
+[
+ {
+  "datatype": 1,
+  "name": "Z02 Spots badkamer (SW)",
+  "id": 1
+ },
+ {
+  "datatype": 1,
+  "name": "Z04 Gang lamp (SW)",
+  "id": 2
+ },
+ {
+  "datatype": 1,
+  "name": "Z05 Bed left (SW)",
+  "id": 3
+ },
+ {
+  "datatype": 1,
+  "name": "Z06 Bed right (SW)",
+  "id": 4
+ },
+ {
+  "datatype": 1,
+  "name": "Z07 Plafoniere slaap (SW)",
+  "id": 5
+ },
+ {
+  "datatype": 1,
+  "name": "Z09 Plafoniere woon (SW)",
+  "id": 6
+ },
+ {
+  "datatype": 1,
+  "name": "Z11 Lamp corner (SW)",
+  "id": 7
+ },
+ {
+  "datatype": 1,
+  "name": "Z12 dining table (SW)",
+  "id": 8
+ },
+ {
+  "datatype": 1,
+  "name": "Z13 Spots kitchen (SW)",
+  "id": 9
+ },
+ {
+  "datatype": 1,
+  "name": "Z02 Spots badkamer (SW FB)",
+  "id": 257
+ },
+ {
+  "datatype": 1,
+  "name": "Z04 Gang lamp (SW FB)",
+  "id": 258
+ },
+ {
+  "datatype": 1,
+  "name": "Z07 Plafoniere slaap (SW FB)",
+  "id": 261
+ },
+ {
+  "datatype": 1,
+  "name": "Z09 Plafoniere woon (SW FB)",
+  "id": 262
+ },
+ {
+  "datatype": 1,
+  "name": "Z11 Lamp corner (SW FB)",
+  "id": 263
+ },
+ {
+  "datatype": 1,
+  "name": "Z12 dining table (SW FB)",
+  "id": 264
+ },
+ {
+  "datatype": 1,
+  "name": "Z13 Spots kitchen (SW FB)",
+  "id": 265
+ },
+ {
+  "datatype": 3,
+  "name": "Z02 Spots badkamer (DIM)",
+  "id": 513
+ },
+ {
+  "datatype": 3,
+  "name": "Z04 Gang lamp (DIM)",
+  "id": 514
+ },
+ {
+  "datatype": 3,
+  "name": "Z05 Bed left (DIM)",
+  "id": 515
+ },
+ {
+  "datatype": 3,
+  "name": "Z06 Bed right (DIM)",
+  "id": 516
+ },
+ {
+  "datatype": 3,
+  "name": "Z07 Plafoniere slaap (DIM)",
+  "id": 517
+ },
+ {
+  "datatype": 3,
+  "name": "Z09 Plafoniere woon (DIM)",
+  "id": 518
+ },
+ {
+  "datatype": 3,
+  "name": "Z11 Lamp corner (DIM)",
+  "id": 519
+ },
+ {
+  "datatype": 3,
+  "name": "Z12 dining table (DIM)",
+  "id": 520
+ },
+ {
+  "datatype": 3,
+  "name": "Z13 Spots kitchen (DIM)",
+  "id": 521
+ },
+ {
+  "datatype": 5,
+  "name": "Z02 Spots badkamer (VALUE)",
+  "id": 769
+ },
+ {
+  "datatype": 5,
+  "name": "Z04 Gang lamp (VALUE)",
+  "id": 770
+ },
+ {
+  "datatype": 5,
+  "name": "Z05 Bed left (VALUE)",
+  "id": 771
+ },
+ {
+  "datatype": 5,
+  "name": "Z06 Bed right (VALUE)",
+  "id": 772
+ },
+ {
+  "datatype": 5,
+  "name": "Z07 Plafoniere slaap (VALUE)",
+  "id": 773
+ },
+ {
+  "datatype": 5,
+  "name": "Z09 Plafoniere woon (VALUE)",
+  "id": 774
+ },
+ {
+  "datatype": 5,
+  "name": "Z11 Lamp corner (VALUE)",
+  "id": 775
+ },
+ {
+  "datatype": 5,
+  "name": "Z12 dining table (VALUE)",
+  "id": 776
+ },
+ {
+  "datatype": 5,
+  "name": "Z13 Spots kitchen (VALUE)",
+  "id": 777
+ },
+ {
+  "datatype": 5,
+  "name": "Z02 Spots badkamer (VALUE FB)",
+  "id": 1025
+ },
+ {
+  "datatype": 5,
+  "name": "Z04 Gang lamp (VALUE FB)",
+  "id": 1026
+ },
+ {
+  "datatype": 5,
+  "name": "Z05 Bed left (VALUE FB)",
+  "id": 1027
+ },
+ {
+  "datatype": 5,
+  "name": "Z06 Bed right (VALUE FB)",
+  "id": 1028
+ },
+ {
+  "datatype": 5,
+  "name": "Z07 Plafoniere slaap (VALUE FB)",
+  "id": 1029
+ },
+ {
+  "datatype": 5,
+  "name": "Z09 Plafoniere woon (VALUE FB)",
+  "id": 1030
+ },
+ {
+  "datatype": 5,
+  "name": "Z11 Lamp corner (VALUE FB)",
+  "id": 1031
+ },
+ {
+  "datatype": 5,
+  "name": "Z12 dining table (VALUE FB)",
+  "id": 1032
+ },
+ {
+  "datatype": 5,
+  "name": "Z13 Spots kitchen (VALUE FB)",
+  "id": 1033
+ },
+ {
+  "datatype": 1,
+  "name": "master\\/slave heating\\/cooling",
+  "id": 2560
+ },
+ {
+  "datatype": 9,
+  "name": "Bedroom CO2 value",
+  "id": 4096
+ },
+ {
+  "datatype": 5,
+  "name": "Bedroom Humidity value",
+  "id": 4097
+ },
+ {
+  "datatype": 9,
+  "name": "Bedroom Temperature value",
+  "id": 4098
+ },
+ {
+  "datatype": 9,
+  "name": "Living room CO2 value",
+  "id": 4099
+ },
+ {
+  "datatype": 5,
+  "name": "Living room Humidity value",
+  "id": 4100
+ },
+ {
+  "datatype": 9,
+  "name": "Living room Temperature value",
+  "id": 4101
+ },
+ {
+  "datatype": 9,
+  "name": "Bathroom CO2  value",
+  "id": 4102
+ },
+ {
+  "datatype": 5,
+  "name": "Bathroom Humidity value",
+  "id": 4103
+ },
+ {
+  "datatype": 9,
+  "name": "Bathroom Temperature value",
+  "id": 4104
+ },
+ {
+  "datatype": 5,
+  "name": "ELAN Mode",
+  "id": 4353
+ },
+ {
+  "datatype": 1,
+  "name": "Bedroom, manual mode (move)",
+  "id": 6144
+ },
+ {
+  "datatype": 1,
+  "name": "Bedroom, automatic mode (move)",
+  "id": 6145
+ },
+ {
+  "datatype": 1,
+  "name": "Living room, manual mode (move)",
+  "id": 6146
+ },
+ {
+  "datatype": 1,
+  "name": "Living room, automatic mode (move)",
+  "id": 6147
+ },
+ {
+  "datatype": 1,
+  "name": "Kitchen, manual mode (move)",
+  "id": 6148
+ },
+ {
+  "datatype": 1,
+  "name": "Kitchen, automatic mode (move)",
+  "id": 6149
+ },
+ {
+  "datatype": 1,
+  "name": "Bedroom, manual mode (stop\\/step)",
+  "id": 6400
+ },
+ {
+  "datatype": 1,
+  "name": "Living room, manual mode (stop\\/step)",
+  "id": 6402
+ },
+ {
+  "datatype": 1,
+  "name": "Kitchen, manual mode (stop\\/step)",
+  "id": 6404
+ },
+ {
+  "datatype": 5,
+  "name": "Bedroom, manual mode (height pos)",
+  "id": 6656
+ },
+ {
+  "datatype": 5,
+  "name": "Living room, manual mode (height pos)",
+  "id": 6658
+ },
+ {
+  "datatype": 5,
+  "name": "Kitchen, manual mode (height pos)",
+  "id": 6660
+ },
+ {
+  "datatype": 5,
+  "name": "Bedroom, status height feedback 1",
+  "id": 7168
+ },
+ {
+  "datatype": 5,
+  "name": "Bedroom, status height feedback",
+  "id": 7169
+ },
+ {
+  "datatype": 5,
+  "name": "Living room, status height feedback 1",
+  "id": 7170
+ },
+ {
+  "datatype": 5,
+  "name": "Living room, statuts height feedback",
+  "id": 7171
+ },
+ {
+  "datatype": 5,
+  "name": "Kitchen, status height feedback 1",
+  "id": 7172
+ },
+ {
+  "datatype": 5,
+  "name": "Kitchen, statuts height feedback",
+  "id": 7173
+ },
+ {
+  "datatype": 1,
+  "name": "Wind protection pulse 60sec",
+  "id": 7424
+ },
+ {
+  "datatype": 1,
+  "name": "Rain",
+  "id": 7425
+ },
+ {
+  "datatype": 1,
+  "name": "Frost",
+  "id": 7426
+ },
+ {
+  "datatype": 1,
+  "name": "Sensor alarm",
+  "id": 7427
+ },
+ {
+  "datatype": 1,
+  "name": "Automatic mode",
+  "id": 7428
+ },
+ {
+  "datatype": 1,
+  "name": "Z03 LED strip bathroom (SW)",
+  "id": 8192
+ },
+ {
+  "datatype": 1,
+  "name": "Z08 LED strip bedroom (SW)",
+  "id": 8193
+ },
+ {
+  "datatype": 1,
+  "name": "Z10 LED strip living room (SW)",
+  "id": 8194
+ },
+ {
+  "datatype": 1,
+  "name": "Z03 LED strip bathroom (SW FB)",
+  "id": 8448
+ },
+ {
+  "datatype": 1,
+  "name": "Z08 LED strip bedroom (SW FB)",
+  "id": 8449
+ },
+ {
+  "datatype": 1,
+  "name": "Z10 LED strip living room (SW FB)",
+  "id": 8450
+ },
+ {
+  "datatype": 5,
+  "name": "Z03 LED strip bathroom (VAL)",
+  "id": 8704
+ },
+ {
+  "datatype": 5,
+  "name": "Z08 LED strip bedroom (VAL)",
+  "id": 8705
+ },
+ {
+  "datatype": 5,
+  "name": "Z10 LED strip living room (VAL)",
+  "id": 8706
+ },
+ {
+  "datatype": 5,
+  "name": "Z03 LED strip bathroom (VAL FB)",
+  "id": 8960
+ },
+ {
+  "datatype": 5,
+  "name": "Z08 LED strip bedroom (VAL FB)",
+  "id": 8961
+ },
+ {
+  "datatype": 5,
+  "name": "Z10 LED strip living room (VAL FB)",
+  "id": 8962
+ },
+ {
+  "datatype": 5,
+  "name": "Z03 LED strip bathroom (COLOR SCENE)",
+  "id": 9216
+ },
+ {
+  "datatype": 5,
+  "name": "Z08 LED strip bedroom (COLOR SCENE)",
+  "id": 9217
+ },
+ {
+  "datatype": 5,
+  "name": "Z10 LED strip living room (COLOR SCENE)",
+  "id": 9218
+ },
+ {
+  "datatype": 9,
+  "name": "Z03 LED strip bathroom (TEMP COLOR)",
+  "id": 9472
+ },
+ {
+  "datatype": 9,
+  "name": "Z08 LED strip bedroom (TEMP COLOR)",
+  "id": 9473
+ },
+ {
+  "datatype": 9,
+  "name": "Z10 LED strip living room (TEMP COLOR)",
+  "id": 9474
+ },
+ {
+  "datatype": 14,
+  "name": "Bedroom MTP energy consumption",
+  "id": 9728
+ },
+ {
+  "datatype": 5,
+  "name": "Bedroom MTP brightness interfase",
+  "id": 9729
+ },
+ {
+  "datatype": 1,
+  "name": "Bedroom MTP night mode",
+  "id": 9730
+ },
+ {
+  "datatype": 1,
+  "name": "Bedroom MTP move up gesture",
+  "id": 9731
+ },
+ {
+  "datatype": 1,
+  "name": "Bedroom MTP move down gesture",
+  "id": 9732
+ },
+ {
+  "datatype": 14,
+  "name": "Living room MTP energy consumption",
+  "id": 9733
+ },
+ {
+  "datatype": 5,
+  "name": "Living room MTP brightness interface",
+  "id": 9734
+ },
+ {
+  "datatype": 1,
+  "name": "Living room MTP night mode",
+  "id": 9735
+ },
+ {
+  "datatype": 1,
+  "name": "Living room MTP move up gesture",
+  "id": 9736
+ },
+ {
+  "datatype": 1,
+  "name": "Living room MTP move down gesture",
+  "id": 9737
+ },
+ {
+  "datatype": 5,
+  "name": "Bathroom MTP brightness interface",
+  "id": 9738
+ },
+ {
+  "datatype": 1,
+  "name": "Bathroom MTP night mode",
+  "id": 9739
+ },
+ {
+  "datatype": 1,
+  "name": "Bathroom MTP move up gesture",
+  "id": 9740
+ },
+ {
+  "datatype": 1,
+  "name": "Bathroom MTP move down gesture",
+  "id": 9741
+ },
+ {
+  "datatype": 1,
+  "name":"Bedroom PBP left night mode LED\'s",
+  "id": 9742
+ },
+ {
+  "datatype": 1,
+  "name":"Bedroom PBP right night mode LED\'s",
+  "id": 9743
+ },
+ {
+  "datatype": 1,
+  "name": "Message - Burgaler",
+  "id": 9745
+ },
+ {
+  "datatype": 1,
+  "name": "Message - Fire",
+  "id": 9746
+ },
+ {
+  "datatype": 1,
+  "name": "Message - High CO2",
+  "id": 9747
+ },
+ {
+  "datatype": 1,
+  "name": "Message - Dangerous wind",
+  "id": 9748
+ },
+ {
+  "datatype": 1,
+  "name": "Message - Low battery",
+  "id": 9749
+ },
+ {
+  "datatype": 1,
+  "name": "Message-Clean Room-1",
+  "id": 9750
+ },
+ {
+  "datatype": 1,
+  "name": "Message-Clean Room-2",
+  "id": 9751
+ },
+ {
+  "datatype": 1,
+  "name": "Message-Clean Room-3",
+  "id": 9752
+ },
+ {
+  "datatype": 5,
+  "name": "Climate - Mode.input - Living room",
+  "id": 9984
+ },
+ {
+  "datatype": 5,
+  "name": "Climate - Mode.input - Bedroom",
+  "id": 9985
+ },
+ {
+  "datatype": 5,
+  "name": "Climate - Mode.output - Living room",
+  "id": 9987
+ },
+ {
+  "datatype": 5,
+  "name": "Climate - Mode.output - Bedroom",
+  "id": 9988
+ },
+ {
+  "datatype": 9,
+  "name": "Climate - Setpoint.input - Living room",
+  "id": 9990
+ },
+ {
+  "datatype": 9,
+  "name": "Climate - Setpoint.input - Bedroom",
+  "id": 9991
+ },
+ {
+  "datatype": 9,
+  "name": "Climate - Setpoint.output - Living room",
+  "id": 9993
+ },
+ {
+  "datatype": 9,
+  "name": "Climate - Setpoint.output - Bedroom",
+  "id": 9994
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.RGBW - Living room 1",
+  "id": 10496
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.R - Living room 1",
+  "id": 10497
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.G - Living room 1",
+  "id": 10498
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.B - Living room 1",
+  "id": 10499
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.W - Living room 1",
+  "id": 10500
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.RGBW - Living room 2",
+  "id": 10501
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.R - Living room 2",
+  "id": 10502
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.G - Living room 2",
+  "id": 10503
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.B - Living room 2",
+  "id": 10504
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.W - Living room 2",
+  "id": 10505
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.RGBW - Bedroom 1",
+  "id": 10506
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.R - Bedroom 1",
+  "id": 10507
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.G - Bedroom 1",
+  "id": 10508
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.B - Bedroom 1",
+  "id": 10509
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.W - Bedroom 1",
+  "id": 10510
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.RGBW - Bedroom 2",
+  "id": 10511
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.R - Bedroom 2",
+  "id": 10512
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.G - Bedroom 2",
+  "id": 10513
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.B - Bedroom 2",
+  "id": 10514
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.W - Bedroom 2",
+  "id": 10515
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.RGBW - Bathroom",
+  "id": 10516
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.R - Bathroom",
+  "id": 10517
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.G - Bathroom",
+  "id": 10518
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.B- Bathroom",
+  "id": 10519
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming - LED.W- Bathroom",
+  "id": 10520
+ },
+ {
+  "datatype": 1,
+  "name": "- reserve",
+  "id": 10752
+ },
+ {
+  "datatype": 1,
+  "name": "Switch Elan 4 - Position 1 (FB)",
+  "id": 10753
+ },
+ {
+  "datatype": 1,
+  "name": "- reserve #1",
+  "id": 10754
+ },
+ {
+  "datatype": 1,
+  "name": "Switch Elan 4 - Position 2 (FB)",
+  "id": 10755
+ },
+ {
+  "datatype": 1,
+  "name": "- reserve #2",
+  "id": 10756
+ },
+ {
+  "datatype": 1,
+  "name": "Switch Elan 4 - Position 3 (FB)",
+  "id": 10757
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Lamp technical room",
+  "id": 10758
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Lamp technical room (FB)",
+  "id": 10759
+ },
+ {
+  "datatype": 1,
+  "name": "- reserve #3",
+  "id": 10760
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Elan - Position 4 (FB)",
+  "id": 10761
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module cooling",
+  "id": 10762
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module cooling (FB)",
+  "id": 10763
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module heating",
+  "id": 10764
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module heating (FB)",
+  "id": 10765
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module pomp Elan",
+  "id": 10766
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module pomp Elan (FB)",
+  "id": 10767
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module pomp V.V.",
+  "id": 10768
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - Energy module pomp V.V (FB)",
+  "id": 10769
+ },
+ {
+  "datatype": 5,
+  "name": "Valve output zone 1",
+  "id": 11008
+ },
+ {
+  "datatype": 5,
+  "name": "Valve output zone 2",
+  "id": 11009
+ },
+ {
+  "datatype": 5,
+  "name": "Valve output zone 3",
+  "id": 11010
+ },
+ {
+  "datatype": 5,
+  "name": "command value zone 1",
+  "id": 11011
+ },
+ {
+  "datatype": 5,
+  "name": "Valve zone 2",
+  "id": 11012
+ },
+ {
+  "datatype": 5,
+  "name": "Valve zone 3",
+  "id": 11013
+ },
+ {
+  "datatype": 5,
+  "name": "Valve zone 1",
+  "id": 11014
+ },
+ {
+  "datatype": 5,
+  "name": "command value zone 2",
+  "id": 11015
+ },
+ {
+  "datatype": 5,
+  "name": "command value zone 3",
+  "id": 11016
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - LED.RGBW - Livingroom 1",
+  "id": 11264
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - LED.RGBW - Livingroom 2",
+  "id": 11265
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - LED.RGBW - Bedroom 1",
+  "id": 11266
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - LED.RGBW - Bedroom 2",
+  "id": 11267
+ },
+ {
+  "datatype": 1,
+  "name": "Switch - LED.RGBW - Bathroom",
+  "id": 11268
+ },
+ {
+  "datatype": 1,
+  "name": "Switch feedback - LED.RGBW - Living room 1",
+  "id": 11520
+ },
+ {
+  "datatype": 1,
+  "name": "Switch feedback - LED.RGBW - Living room 2",
+  "id": 11521
+ },
+ {
+  "datatype": 1,
+  "name": "Switch feedback - LED.RGBW - Bedroom 1",
+  "id": 11522
+ },
+ {
+  "datatype": 1,
+  "name": "Switch feedback - LED.RGBW - Bedroom 2",
+  "id": 11523
+ },
+ {
+  "datatype": 1,
+  "name": "Switch feedback - LED.RGBW - Bathroom",
+  "id": 11524
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.RGBW - Living room1",
+  "id": 11776
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.RGBW - Living room2",
+  "id": 11777
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.RGBW - Bedroom 1",
+  "id": 11778
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.RGBW - Bedroom 2",
+  "id": 11779
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.RGBW - Bathroom",
+  "id": 11780
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.R - Living room 1",
+  "id": 11781
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.R - Living room 2",
+  "id": 11782
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.R - Bedroom 1",
+  "id": 11783
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.R - Bedroom 2",
+  "id": 11784
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.R - Bathroom",
+  "id": 11785
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.G - Living room 1",
+  "id": 11786
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.G - Living room 2",
+  "id": 11787
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.G - Bedroom 1",
+  "id": 11788
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.G - Bedroom 2",
+  "id": 11789
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.G - Bathroom",
+  "id": 11790
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.B - Living room 1",
+  "id": 11791
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.B - Living room 2",
+  "id": 11792
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.B - Bedroom 1",
+  "id": 11793
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.B - Bedroom 2",
+  "id": 11794
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.B - Bathroom",
+  "id": 11795
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.W - Living room 1",
+  "id": 11796
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.W - Living room 2",
+  "id": 11797
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.W - Bedroom 1",
+  "id": 11798
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.W - Bedroom 2",
+  "id": 11799
+ },
+ {
+  "datatype": 5,
+  "name": "Absolute dimming feedback - LED.W - Bathroom",
+  "id": 11800
+ },
+ {
+  "datatype": 9,
+  "name": "Twilight measured value",
+  "id": 12288
+ },
+ {
+  "datatype": 9,
+  "name": "Wind measured value",
+  "id": 12289
+ },
+ {
+  "datatype": 1,
+  "name": "Rain YES\\/NO",
+  "id": 12290
+ },
+ {
+  "datatype": 9,
+  "name": "Sun east measured value",
+  "id": 12291
+ },
+ {
+  "datatype": 9,
+  "name": "Sun south measured value",
+  "id": 12292
+ },
+ {
+  "datatype": 9,
+  "name": "Sun west measured value",
+  "id": 12293
+ },
+ {
+  "datatype": 1,
+  "name": "Value input 1 - Rookmelder alarm",
+  "id": 12800
+ },
+ {
+  "datatype": 5,
+  "name": "Value input 1 - Rookmelder visualisation",
+  "id": 12801
+ },
+ {
+  "datatype": 1,
+  "name": "Value ipnut 2 - Enerdy module bedrijfsmelding",
+  "id": 12802
+ },
+ {
+  "datatype": 1,
+  "name": "Value ipnut 3 - Energy module foutmelding",
+  "id": 12803
+ },
+ {
+  "datatype": 1,
+  "name": "Value input 4 - Sprinkler installation",
+  "id": 12804
+ },
+ {
+  "datatype": 9,
+  "name": "Outdoor brightness sensor",
+  "id": 13056
+ },
+ {
+  "datatype": 9,
+  "name": "Outdoor temperature sensor",
+  "id": 13057
+ },
+ {
+  "datatype": 5,
+  "name": "Woonkamer (Autolight VALUE)",
+  "id": 14337
+ },
+ {
+  "datatype": 5,
+  "name": "Slaapkamer (Autolight VALUE)",
+  "id": 14338
+ },
+ {
+  "datatype": 5,
+  "name": "Entree (Autolight VALUE)",
+  "id": 14339
+ },
+ {
+  "datatype": 5,
+  "name": "Keuken (Autolight VALUE)",
+  "id": 14340
+ },
+ {
+  "datatype": 3,
+  "name": "Set RGB color",
+  "id": 14592
+ },
+ {
+  "datatype": 5,
+  "name": "Scene central",
+  "id": 15360
+ },
+ {
+  "datatype": 5,
+  "name": "Aanwezigheids simulatie modus",
+  "id": 32762
+ },
+ {
+  "datatype": 1,
+  "name": "Aanwezigheid start \\/ stop",
+  "id": 32763
+ },
+ {
+  "datatype": 1,
+  "name": "Aanwezigheid Wissen",
+  "id": 32764
+ },
+ {
+  "datatype": 1,
+  "name": "Start\\/stop TM",
+  "id": 32765
+ },
+ {
+  "datatype": 1,
+  "name": "Wissen TM",
+  "id": 32766
+ },
+ {
+  "datatype": 1,
+  "name": "Centraal uit",
+  "id": 32767
+ },
+ {
+  "datatype": 10,
+  "name": "TijdScript",
+  "id": 65536
+ },
+ {
+  "datatype": 11,
+  "name": "DatumScript",
+  "id": 65537
+ },
+ {
+  "datatype": 1,
+  "name": "Cleaning lock",
+  "id": 65538
+ },
+ {
+  "datatype": 5,
+  "name": "Nieuws",
+  "id": 65539
+ },
+ {
+  "datatype": 1,
+  "name": "Export functie",
+  "id": 65540
+ },
+ {
+  "datatype": 6,
+  "name": "Logo",
+  "id": 65541
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 1 A",
+  "id": 65636
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 1 NA",
+  "id": 65637
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 2 A",
+  "id": 65638
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 2 NA",
+  "id": 65639
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 3 A",
+  "id": 65640
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 3 NA",
+  "id": 65641
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 4 A",
+  "id": 65642
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 4 NA",
+  "id": 65643
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 5 A",
+  "id": 65644
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 5 NA",
+  "id": 65645
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 6 A",
+  "id": 65646
+ },
+ {
+  "datatype": 1,
+  "name": "Scene 6 NA",
+  "id": 65647
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Stationcode",
+  "id": 65792
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Stationregio",
+  "id": 65793
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Stationnaam",
+  "id": 65794
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Lat",
+  "id": 65795
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Lon",
+  "id": 65796
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Datum gegevens weerstation",
+  "id": 65797
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Luchtvochtigheid",
+  "id": 65798
+ },
+ {
+  "datatype": 255,
+  "name": "Actuele Temperatuur graden celsius",
+  "id": 65799
+ },
+ {
+  "datatype": 255,
+  "name": "Windsnelheid",
+  "id": 65800
+ },
+ {
+  "datatype": 255,
+  "name": "Windsnelheid BF",
+  "id": 65801
+ },
+ {
+  "datatype": 255,
+  "name": "Windrichting GR",
+  "id": 65802
+ },
+ {
+  "datatype": 255,
+  "name": "Windrichting",
+  "id": 65803
+ },
+ {
+  "datatype": 255,
+  "name": "Luchtdruk",
+  "id": 65804
+ },
+ {
+  "datatype": 255,
+  "name": "Zichtmeters",
+  "id": 65805
+ },
+ {
+  "datatype": 255,
+  "name": "Windstoten MS",
+  "id": 65806
+ },
+ {
+  "datatype": 255,
+  "name": "Regen MMPU",
+  "id": 65807
+ },
+ {
+  "datatype": 255,
+  "name": "Zin",
+  "id": 65808
+ },
+ {
+  "datatype": 255,
+  "name": "ID",
+  "id": 65809
+ },
+ {
+  "datatype": 255,
+  "name": "IcoonActueel",
+  "id": 65810
+ },
+ {
+  "datatype": 255,
+  "name": "Temperatuur 10cm",
+  "id": 65811
+ },
+ {
+  "datatype": 255,
+  "name": "URL",
+  "id": 65812
+ },
+ {
+  "datatype": 255,
+  "name": "Lat graden",
+  "id": 65813
+ },
+ {
+  "datatype": 255,
+  "name": "Lon graden",
+  "id": 65814
+ },
+ {
+  "datatype": 5,
+  "name": "Actuele Icon",
+  "id": 65815
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Datum gegevens weerstation",
+  "id": 65816
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Dag van de week",
+  "id": 65817
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Zon kans",
+  "id": 65818
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Regen kans",
+  "id": 65819
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Min regen",
+  "id": 65820
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Max regen",
+  "id": 65821
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Min temperatuur",
+  "id": 65822
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Max temperatuur",
+  "id": 65823
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Windrichting",
+  "id": 65824
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Windkracht",
+  "id": 65825
+ },
+ {
+  "datatype": 5,
+  "name": "+1 Icon",
+  "id": 65826
+ },
+ {
+  "datatype": 255,
+  "name": "+1 Icon ID",
+  "id": 65827
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Datum gegevens weerstation",
+  "id": 65828
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Dag van de Week",
+  "id": 65829
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Zon kans",
+  "id": 65830
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Regen kans",
+  "id": 65831
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Min regen",
+  "id": 65832
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Max regen",
+  "id": 65833
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Min temperatuur",
+  "id": 65834
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Max temperatuur",
+  "id": 65835
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Windrichting",
+  "id": 65836
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Windkracht",
+  "id": 65837
+ },
+ {
+  "datatype": 5,
+  "name": "+2 Icon",
+  "id": 65838
+ },
+ {
+  "datatype": 255,
+  "name": "+2 Icon ID",
+  "id": 65839
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Datum gegevens weerstation",
+  "id": 65840
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Dag van de week",
+  "id": 65841
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Zon kans",
+  "id": 65842
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Regen kans",
+  "id": 65843
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Min regen",
+  "id": 65844
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Max regen",
+  "id": 65845
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Min temperatuur",
+  "id": 65846
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Max temperatuur",
+  "id": 65847
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Windrichting",
+  "id": 65848
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Windkracht",
+  "id": 65849
+ },
+ {
+  "datatype": 5,
+  "name": "+3 Icon",
+  "id": 65850
+ },
+ {
+  "datatype": 255,
+  "name": "+3 Icon ID",
+  "id": 65851
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Datum gegevens weerstation",
+  "id": 65852
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Dag van de week",
+  "id": 65853
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Zon kans",
+  "id": 65854
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Regen kans",
+  "id": 65855
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Min regen",
+  "id": 65856
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Max regen",
+  "id": 65857
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Min temperatuur",
+  "id": 65858
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Max temperatuur",
+  "id": 65859
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Windrichting",
+  "id": 65860
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Windkracht",
+  "id": 65861
+ },
+ {
+  "datatype": 5,
+  "name": "+4 Icon",
+  "id": 65862
+ },
+ {
+  "datatype": 255,
+  "name": "+4 Icon ID",
+  "id": 65863
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Datum gegevens weerstation",
+  "id": 65864
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Dag van de Week",
+  "id": 65865
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Zon kans",
+  "id": 65866
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Regen kans",
+  "id": 65867
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Min regen",
+  "id": 65868
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Max regen",
+  "id": 65869
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Min temperatuur",
+  "id": 65870
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Max temperatuur",
+  "id": 65871
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Windrichting",
+  "id": 65872
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Windkracht",
+  "id": 65873
+ },
+ {
+  "datatype": 5,
+  "name": "+5 Icon",
+  "id": 65874
+ },
+ {
+  "datatype": 255,
+  "name": "+5 Icon ID",
+  "id": 65875
+ },
+ {
+  "datatype": 16,
+  "name": "WaardeActieveWidget",
+  "id": 66302
+ },
+ {
+  "datatype": 16,
+  "name": "Actieve widget",
+  "id": 66303
+ },
+ {
+  "datatype": 232600,
+  "name": "RGB - Woonkamer",
+  "id": 67584
+ },
+ {
+  "datatype": 232600,
+  "name": "RGB - Slaapkamer",
+  "id": 67585
+ },
+ {
+  "datatype": 232600,
+  "name": "RGB - Badkamer",
+  "id": 67586
+ },
+ {
+  "datatype": 1,
+  "name": "Dummy Boolean",
+  "id": 129281
+ },
+ {
+  "datatype": 5001,
+  "name": "Dummy Schaal",
+  "id": 129282
+ },
+ {
+  "datatype": 9001,
+  "name": "Dummy Temperatuur",
+  "id": 129283
+ },
+ {
+  "datatype": 232600,
+  "name": "Dummy RGB",
+  "id": 129284
+ },
+ {
+  "datatype": 5001,
+  "name": "Dummy Gordijn\\/zonweering",
+  "id": 129285
+ },
+ {
+  "datatype": 1,
+  "name": "Dummy beveiliging",
+  "id": 129286
+ },
+ {
+  "datatype": 1,
+  "name": "Dummy buienrader",
+  "id": 129287
+ },
+ {
+  "datatype": 5001,
+  "name": "Dummy ventilatie",
+  "id": 129288
+ },
+ {
+  "datatype": 232600,
+  "name": "Dummy RGB - All",
+  "id": 129289
+ }
+]
