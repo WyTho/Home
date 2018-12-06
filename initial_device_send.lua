@@ -233,7 +233,7 @@ function CreateUsage(CONSTANTS, data, item_id)
         log("ENDPOINT usage DOESN'T HAVE METHOD 'POST'")
         return
     end
-
+    
     --  [[ TODO: BLOCK OBJECT_SPECIFIC  ]]  --
     local CONSUMPTION_AMOUNT = -1 -- Not bound to realistic values right now
     local CONSUMPTION_TYPE = nil
