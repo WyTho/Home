@@ -1,0 +1,18 @@
+{
+ "1-bit(boolean)": [
+  "toggle",
+  "boolean",
+  "activate",
+  "transition",
+  "alarm",
+  "low/high",
+  "step",
+  "move up/move down",
+  "open/close",
+  "start/stop",
+  "activity",
+  "inversion",
+  "type dimming",
+  "data"
+ ]
+}
