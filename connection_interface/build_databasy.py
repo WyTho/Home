@@ -47,41 +47,41 @@ CONSUMPTIONTYPES = [
 ]
 
 OBJECTS = [
-    {'name': 'Badkamer Spots', 'address': '0/0/1', 'consumption_type_id': 3},
-    {'name': 'Badkamer Spots', 'address': '0/2/1', 'consumption_type_id': 18},
+    {'name': 'Badkamer Spots', 'address': '0/0/1', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'Badkamer Spots', 'address': '0/2/1', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'Gang lamp', 'address': '0/0/2', 'consumption_type_id': 3},
-    {'name': 'Gang lamp', 'address': '0/2/2', 'consumption_type_id': 18},
+    {'name': 'Gang lamp', 'address': '0/0/2', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'Gang lamp', 'address': '0/2/2', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'Bed left', 'address': '0/0/3', 'consumption_type_id': 3},
-    {'name': 'Bed left', 'address': '0/2/3', 'consumption_type_id': 18},
+    {'name': 'Bed left', 'address': '0/0/3', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'Bed left', 'address': '0/2/3', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'Bed right', 'address': '0/0/4', 'consumption_type_id': 3},
-    {'name': 'Bed right', 'address': '0/2/4', 'consumption_type_id': 18},
+    {'name': 'Bed right', 'address': '0/0/4', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'Bed right', 'address': '0/2/4', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'Plafonier slaap', 'address': '0/0/5', 'consumption_type_id': 3},
-    {'name': 'Plafonier slaap', 'address': '0/2/5', 'consumption_type_id': 18},
+    {'name': 'Plafonier slaap', 'address': '0/0/5', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'Plafonier slaap', 'address': '0/2/5', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'Plafoniere woon', 'address': '0/0/6', 'consumption_type_id': 3},
-    {'name': 'Plafoniere woon', 'address': '0/2/6', 'consumption_type_id': 18},
+    {'name': 'Plafoniere woon', 'address': '0/0/6', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'Plafoniere woon', 'address': '0/2/6', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'lamp corner', 'address': '0/0/7', 'consumption_type_id': 3},
-    {'name': 'lamp corner', 'address': '0/2/7', 'consumption_type_id': 18},
+    {'name': 'lamp corner', 'address': '0/0/7', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'lamp corner', 'address': '0/2/7', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'dining table', 'address': '0/0/7', 'consumption_type_id': 3},
-    {'name': 'dining table', 'address': '0/2/7', 'consumption_type_id': 18},
+    {'name': 'dining table', 'address': '0/0/7', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'dining table', 'address': '0/2/7', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'spots kitchen', 'address': '0/0/7', 'consumption_type_id': 3},
-    {'name': 'spots kitchen', 'address': '0/2/7', 'consumption_type_id': 18},
+    {'name': 'spots kitchen', 'address': '0/0/7', 'consumption_type_id': 3, 'current_value': None},
+    {'name': 'spots kitchen', 'address': '0/2/7', 'consumption_type_id': 18, 'current_value': None},
 
-    {'name': 'Master/slave heating/cooling', 'address': '1/2/0', 'consumption_type_id': 3},
+    {'name': 'Master/slave heating/cooling', 'address': '1/2/0', 'consumption_type_id': 3, 'current_value': None},
 
-    {'name': 'Bedroom (manual)', 'address': '3/1/0', 'consumption_type_id': 8},
-    {'name': 'Bedroom (Auto)', 'address': '3/1/1', 'consumption_type_id': 8},
-    {'name': 'Living (manual)', 'address': '3/1/2', 'consumption_type_id': 8},
-    {'name': 'Living (Auto)', 'address': '3/1/3', 'consumption_type_id': 8},
-    {'name': 'Kitchen (manual)', 'address': '3/1/4', 'consumption_type_id': 8},
-    {'name': 'Kitchen (Auto)', 'address': '3/1/5', 'consumption_type_id': 8},
+    {'name': 'Bedroom (manual)', 'address': '3/1/0', 'consumption_type_id': 8, 'current_value': None},
+    {'name': 'Bedroom (Auto)', 'address': '3/1/1', 'consumption_type_id': 8, 'current_value': None},
+    {'name': 'Living (manual)', 'address': '3/1/2', 'consumption_type_id': 8, 'current_value': None},
+    {'name': 'Living (Auto)', 'address': '3/1/3', 'consumption_type_id': 8, 'current_value': None},
+    {'name': 'Kitchen (manual)', 'address': '3/1/4', 'consumption_type_id': 8, 'current_value': None},
+    {'name': 'Kitchen (Auto)', 'address': '3/1/5', 'consumption_type_id': 8, 'current_value': None},
 ]
 
 # Delete database file if it exists currently
