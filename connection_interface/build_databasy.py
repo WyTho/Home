@@ -104,4 +104,11 @@ for obj in OBJECTS:
     o = Object(name=obj['name'], address=obj['address'], consumption_type_id=obj['consumption_type_id'])
     db.session.add(o)
 
+db.engine.execute('CREATE TABLE `event` ( \
+        `id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \
+        `object_id`	INTEGER NOT NULL, \
+        `time`	TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\
+        `value`	INTEGER \
+);') # Needs to be manual since we don't need it in the API
+
 db.session.commit()
