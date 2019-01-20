@@ -1,0 +1,135 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger WyTho
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+# Paths supported by the server application
+paths:
+  /objects:
+    get:
+      operationId: "resources.objects.get_all"
+      tags:
+        - "object"
+      summary: "Object data supported by the server"
+      description: "Read the list of objects"
+      responses:
+        200:
+          description: "Successfully read the list of objects"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "number"
+                name:
+                  type: "string"
+                address:
+                  type: "string"
+                consumption_type_id:
+                  type: "number"
+  /objects/{name}:
+    get:
+      operationId: "resources.objects.get_by_name"
+      tags:
+        - "object"
+      summary: "Single object data supported by the server"
+      description: "Read the list of objects"
+      parameters:
+      - in: path
+        name: name
+        required: true
+        type: string
+        minimum: 1
+        description: The name of the object
+      responses:
+        200:
+          description: "Successfully get an object by address"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "number"
+                name:
+                  type: "string"
+                address:
+                  type: "string"
+                consumption_type_id:
+                  type: "number"
+  /objects/{id}:
+    get:
+      operationId: "resources.objects.get_by_id"
+      tags:
+        - "object"
+      summary: "Single object data supported by the server"
+      description: "Read the list of objects"
+      parameters:
+      - in: path
+        name: id
+        required: true
+        type: integer
+        minimum: 1
+        description: The id of the object
+      responses:
+        200:
+          description: "Successfully get an object by id"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "number"
+                name:
+                  type: "string"
+                address:
+                  type: "string"
+                consumption_type_id:
+                  type: "number"
+  /objects/{id}/{new_value}:
+    post:
+      operationId: "resources.commands.send_command"
+      tags:
+        - "object"
+        - "command"
+      summary: "command data"
+      description: "Make a request to an Object on the Homelynk LSS100-100"
+      parameters:
+      - in: path
+        name: id
+        required: true
+        type: integer
+        minimum: 1
+        description: The id of the object
+      - in: path
+        name: new_value
+        required: true
+        type: string
+        minimum: 1
+        description: The new value of the object
+      responses:
+        200:
+          description: "Successfully get an object by id"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "number"
+                name:
+                  type: "string"
+                address:
+                  type: "string"
+                consumption_type_id:
+                  type: "number"
+        400:
+          description: Bad request. Id or Consumption_Type incorrect
+        404:
+          description: Id or Consumption_Type not found
+
