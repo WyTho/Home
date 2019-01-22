@@ -1,5 +1,7 @@
 from classes.TCPObserver import TCPObserver
 import threading
+import json
+from config import db
 
 
 class HomeLynkController(threading.Thread, TCPObserver):
@@ -9,11 +11,33 @@ class HomeLynkController(threading.Thread, TCPObserver):
         self.queue = Q
         threading.Thread.__init__(self)
 
-    def check_type(self, data):
-        return data
+    def update_objects(self, changed_objects):
+        for j in changed_objects:
+            update_objects_query = "UPDATE 'object' SET 'current_value'='{}' WHERE _rowid_='{}'".format(j["new_value"], j["id"])
+            insert_event_query = "INSERT INTO 'event'('object_id','value') VALUES ('{}','{}')".format(j["id"], j["new_value"])
+            db.engine.execute(update_objects_query)
+            db.engine.execute(insert_event_query)
 
     def handle_data(self, data):
-        print(self.text_color + data.decode("utf-8"))
+        try:
+            j_data = json.loads(data.decode("utf-8"))  # Convert data to json data
+        except:
+            return
+
+        changed_objects =[]
+        for j_obj in j_data:
+            db_obj = db.engine.execute('SELECT * FROM object WHERE "address"="{}"'.format(j_obj["address"])).first() # Get data from database
+            if j_obj["address"] == db_obj["address"]:
+                if str(j_obj["value"]) != str(db_obj["current_value"]):
+                    current_obj = {"address": db_obj["address"], \
+                                   "id": db_obj["id"], \
+                                   "current_value": db_obj["current_value"], \
+                                   "new_value": j_obj["value"]}
+
+                    changed_objects.append(current_obj)
+
+        self.update_objects(changed_objects)
+
         return True
 
     def run(self):
