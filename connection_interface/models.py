@@ -1,5 +1,4 @@
 from config import db, ma
-from marshmallow import fields
 
 class ConsumptionType(db.Model):
     __tablename__ = "consumption_type"
@@ -19,7 +18,8 @@ class Object(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=True)
     address = db.Column(db.String(10), nullable=False)
-    consumption_type_id = db.Column(db.Integer, db.ForeignKey('consumption_type.id'), nullable=False)
+    data_type_id = db.Column(db.Integer, db.ForeignKey('data_type.id'), nullable=False)
+    current_value = db.Column(db.String(), nullable=True)
 
 
 class ObjectSchema(ma.ModelSchema):
