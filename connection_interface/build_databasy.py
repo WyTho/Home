@@ -35,6 +35,17 @@ OBJECTS = [
     # RESEARCHDATA
     # Feedback lights
 
+    {'name': 'Badkamer spots',  'address': '0/0/1', 'data_type_id': 2, 'current_value': None},
+    {'name': 'Gang lamp',       'address': '0/0/2', 'data_type_id': 2, 'current_value': None},
+    {'name': 'Bed left',        'address': '0/0/3', 'data_type_id': 2, 'current_value': None},
+    {'name': 'Bed right',       'address': '0/0/4', 'data_type_id': 2, 'current_value': None},
+    {'name': 'Plafonier slaap', 'address': '0/0/5', 'data_type_id': 2, 'current_value': None},
+    {'name': 'Plafoniere woon', 'address': '0/0/6', 'data_type_id': 2, 'current_value': None},
+    {'name': 'lamp corner',     'address': '0/0/7', 'data_type_id': 2, 'current_value': None},
+    {'name': 'dining table',    'address': '0/0/8', 'data_type_id': 2, 'current_value': None},
+    {'name': 'spots kitchen',   'address': '0/0/9', 'data_type_id': 2, 'current_value': None},
+
+
     {'name': 'Badkamer spots FB',   'address': '0/1/1', 'data_type_id': 2, 'current_value': None},
     {'name': 'Gang lamp FB',        'address': '0/1/2', 'data_type_id': 2, 'current_value': None},
     {'name': 'Bed left FB',         'address': '0/1/3', 'data_type_id': 2, 'current_value': None},

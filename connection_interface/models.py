@@ -25,7 +25,7 @@ class Object(db.Model):
 class ObjectSchema(ma.ModelSchema):
     class Meta:
         model = Object
-        fields = ["id", "name", "address", "consumption_type_id"]
+        fields = ["id", "name", "address", "data_type_id", "current_value"]
         sqla_session = db.session
 
 
