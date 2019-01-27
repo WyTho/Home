@@ -93,7 +93,7 @@ paths:
                 consumption_type_id:
                   type: "number"
   /objects/{id}/{new_value}:
-    post:
+    get:
       operationId: "resources.commands.send_command"
       tags:
         - "object"
