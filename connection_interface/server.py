@@ -2,10 +2,9 @@ from config import connex_app
 from config import SIM_CONTROLLER, USE_SIMULATION, SIM_REGISTER_FROM_DATABASE
 from flask import render_template
 from queue import Queue
-from classes.TCPObserver import TCPObserver
 from classes.TCPThread import TCPThread
 from classes.HomeLynkController import HomeLynkController
-from classes.simulation.lamp import Lamp
+from classes.simulation.devices.lamp import Lamp
 
 # Read the objects.yml file to configure the endpoints
 connex_app.add_api('objects.yml')

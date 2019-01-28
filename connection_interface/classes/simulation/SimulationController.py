@@ -1,9 +1,8 @@
 from threading import Thread
 import schedule
 from classes.simulation.abstract.device import AbstractDevice
-from classes.simulation.lamp import Lamp
+from classes.simulation.devices.lamp import Lamp
 from models import Object
-from config import db
 import json
 
 
