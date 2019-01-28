@@ -22,19 +22,32 @@ class HomeLynkController(threading.Thread, TCPObserver):
         try:
             j_data = json.loads(data.decode("utf-8"))  # Convert data to json data
         except:
-            return
+            j_data = json.loads(data)
 
-        changed_objects =[]
-        for j_obj in j_data:
-            db_obj = db.engine.execute('SELECT * FROM object WHERE "address"="{}"'.format(j_obj["address"])).first() # Get data from database
-            if j_obj["address"] == db_obj["address"]:
-                if str(j_obj["value"]) != str(db_obj["current_value"]):
+        changed_objects = []
+
+        if 'address' in j_data:
+            db_obj = db.engine.execute('SELECT * FROM object WHERE "address"="{}"'.format(j_data["address"])).first()  # Get data from database
+            if j_data["address"] == db_obj["address"]:
+                if str(j_data["value"]) != str(db_obj["current_value"]):
                     current_obj = {"address": db_obj["address"], \
                                    "id": db_obj["id"], \
                                    "current_value": db_obj["current_value"], \
-                                   "new_value": j_obj["value"]}
+                                   "new_value": j_data["value"]}
 
                     changed_objects.append(current_obj)
+        else:
+            for j_obj in j_data:
+                print(j_obj)
+                db_obj = db.engine.execute('SELECT * FROM object WHERE "address"="{}"'.format(j_obj["address"])).first() # Get data from database
+                if j_obj["address"] == db_obj["address"]:
+                    if str(j_obj["value"]) != str(db_obj["current_value"]):
+                        current_obj = {"address": db_obj["address"], \
+                                       "id": db_obj["id"], \
+                                       "current_value": db_obj["current_value"], \
+                                       "new_value": j_obj["value"]}
+
+                        changed_objects.append(current_obj)
 
         self.update_objects(changed_objects)
 

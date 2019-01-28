@@ -13,6 +13,12 @@ class ConsumptionTypeSchema(ma.ModelSchema):
         sqla_session = db.session
 
 
+class Script(db.Model):
+    __tablename__ = "script"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+
+
 class Object(db.Model):
     __tablename__ = "object"
     id = db.Column(db.Integer, primary_key=True)
@@ -20,6 +26,7 @@ class Object(db.Model):
     address = db.Column(db.String(10), nullable=False)
     data_type_id = db.Column(db.Integer, db.ForeignKey('data_type.id'), nullable=False)
     current_value = db.Column(db.String(), nullable=True)
+    script_id = db.Column(db.Integer, db.ForeignKey('script.id'), nullable=True)
 
 
 class ObjectSchema(ma.ModelSchema):

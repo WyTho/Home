@@ -20,3 +20,9 @@ db = SQLAlchemy(app)
 
 # Initialize Marshmallow
 ma = Marshmallow(app)
+
+from classes.simulation.SimulationController import SimulationController
+
+USE_SIMULATION = True  # Simulation global
+SIM_REGISTER_FROM_DATABASE = True
+SIM_CONTROLLER = SimulationController()

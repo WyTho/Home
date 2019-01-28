@@ -1,7 +1,7 @@
 from models import Object, ObjectSchema
 import requests
 from flask import abort
-from config import db
+from config import USE_SIMULATION, SIM_CONTROLLER
 
 
 def send_command(id, new_value):
@@ -17,14 +17,18 @@ def send_command(id, new_value):
     combined_object_schema = dict()
     combined_object_schema.update(st)  # add the object to the list
 
-    link = 'http://remote:SelficientUSP@192.168.8.5/scada-remote?m=json&r=grp&fn=write&alias={}&value={}' \
-        .format(st['address'], new_value)
-
-    if(st['id'] >= 9):
-        abort(405)
-
-    r = requests.get(url=link)
-    if(r.status_code == 200):
+    if USE_SIMULATION:
+        SIM_CONTROLLER.handle_interact(obj.address, new_value)
         combined_object_schema["current_value"] = new_value
+    else:
+        link = 'http://remote:SelficientUSP@192.168.8.5/scada-remote?m=json&r=grp&fn=write&alias={}&value={}' \
+            .format(st['address'], new_value)
+
+        if (st['id'] >= 9):
+            abort(405)
+
+        r = requests.get(url=link)
+        if (r.status_code == 200):
+            combined_object_schema["current_value"] = new_value
 
     return combined_object_schema
