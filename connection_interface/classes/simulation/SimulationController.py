@@ -1,7 +1,11 @@
 from threading import Thread
+import time
 import schedule
 from classes.simulation.abstract.device import AbstractDevice
 from classes.simulation.devices.lamp import Lamp
+from classes.simulation.devices.temperature_target import TemperatureTarget
+from classes.simulation.devices.livingroom_temperature import LivingRoomTemperature
+from classes.simulation.devices.heating_cooling import HeatingCooling
 from models import Object
 import json
 
@@ -19,6 +23,7 @@ class SimulationController(Thread):
     def run(self):
         while True:
             self.schedule.run_pending()
+            time.sleep(0.25)
 
     def handle_interact(self, address, new_value):
         obj = Object.query \
@@ -27,16 +32,23 @@ class SimulationController(Thread):
 
         for device in self.devices:
             if device.ADDRESS == obj.address:
-                current_obj = {"address": device.ADDRESS,
-                               "id": obj.id,
-                               "value": new_value}
-                self.queue.put(json.dumps(current_obj))
+                if device.INTERACTABLE:
+                    current_obj = {"address": device.ADDRESS,
+                                   "id": obj.id,
+                                   "value": new_value}
+                    self.queue.put(json.dumps(current_obj))
+                else:
+                    print('Unable to interact with device')
+            else:
+                print('Unable to interact with device')
 
     def register_device(self, device):
         if isinstance(device, AbstractDevice):
-            self.devices.append(device)
-            if device.DO_MAIN_LOOP:
-                self.schedule.every(device.MAIN_LOOP_SCHEDULE).seconds.do(device.main_loop())
+            if device not in self.devices:
+                self.devices.append(device)
+                if device.DO_MAIN_LOOP:
+                    print("DOING IT")
+                    self.schedule.every(device.MAIN_LOOP_SCHEDULE).seconds.do(device.main_loop)
         else:
             raise TypeError('Object is not a derivative of AbstractDevice')
 
@@ -45,8 +57,21 @@ class SimulationController(Thread):
         .filter(Object.script_id.isnot(None)) \
         .all()
 
+        self.devices = []
+        self.schedule.clear()
+
         for object in objects:
-            if(object.script_id == 1):
+            if object.script_id == 1:  # Lamp
                 device = Lamp(object.name, object.address)
                 self.register_device(device)
+            if object.script_id == 2:  # Temperature_target
+                device = TemperatureTarget(object.name, object.address)
+                self.register_device(device)
+            if object.script_id == 3:  # Livingroom temperature
+                device = LivingRoomTemperature(object.name, object.address)
+                self.register_device(device)
+            if object.script_id == 4:  # heating_cooling
+                device = HeatingCooling(object.name, object.address)
+                self.register_device(device)
+
 

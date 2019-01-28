@@ -32,7 +32,10 @@ CONSUMPTIONTYPES = [
 ]
 
 SCRIPTS = [
-    {'name': 'Lamp'}  # 1
+    {'name': 'Lamp'},  # 1
+    {'name': 'Temperature_target'},  # 2
+    {'name': 'Livingroom Temperature'},  # 3
+    {'name': 'Heating/Cooling'}  # 4
 ]
 
 OBJECTS = [
@@ -72,7 +75,8 @@ OBJECTS = [
     # RESEARCHDATA
     # Master/slave heating/cooling
 
-    {'name': 'master/slave heating/cooling', 'address': '1/2/0', 'data_type_id': 1, 'current_value': None},
+    {'name': 'master/slave heating/cooling', 'address': '1/2/0', 'data_type_id': 1, 'current_value': False, 'script_id': 4},
+    {'name': 'temperature target', 'address': '1/2/1', 'data_type_id': 5, 'current_value': 20.00, 'script_id': 2},
 
     # RESEARCHDATA
     # Ventilation
@@ -86,7 +90,7 @@ OBJECTS = [
     {'name': 'Bathroom Humidity', 'address': '2/0/7', 'data_type_id': 3, 'current_value': None},
 
     {'name': 'Bedroom Temperature', 'address': '2/0/2', 'data_type_id': 5, 'current_value': None},
-    {'name': 'Livingroom Temperature', 'address': '2/0/5', 'data_type_id': 5, 'current_value': None},
+    {'name': 'Livingroom Temperature', 'address': '2/0/5', 'data_type_id': 5, 'current_value': 3.0, 'script_id': 3},
     {'name': 'Bathroom Temperature', 'address': '2/0/8', 'data_type_id': 5, 'current_value': None},
 
     # RESEARCHDATA
@@ -243,7 +247,7 @@ for obj in OBJECTS:
         spt_id = obj['script_id']
     else:
         spt_id = None
-    o = Object(name=obj['name'], address=obj['address'], data_type_id=obj['data_type_id'], script_id=spt_id)
+    o = Object(name=obj['name'], current_value=obj['current_value'], address=obj['address'], data_type_id=obj['data_type_id'], script_id=spt_id)
 
     db.session.add(o)
 
