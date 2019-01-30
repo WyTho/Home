@@ -1,6 +1,12 @@
 from config import db, ma
 
+
 class ConsumptionType(db.Model):
+    """Consumption type for database model
+    
+    Arguments:
+        db {SQLAlchemy} -- SQLAlchemy config
+    """
     __tablename__ = "consumption_type"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=True)
@@ -8,18 +14,34 @@ class ConsumptionType(db.Model):
 
 
 class ConsumptionTypeSchema(ma.ModelSchema):
+    """Marshmellow ConsumptionType
+    
+    Arguments:
+        ma {Marshmellow} -- Marshmellow config
+    """
+
     class Meta:
         model = ConsumptionType
         sqla_session = db.session
 
 
 class Script(db.Model):
+    """Script for database model
+    
+    Arguments:
+        db {SQLAlchemy} -- SQLAlchemy config
+    """
     __tablename__ = "script"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False)
 
 
 class Object(db.Model):
+    """Object for database model
+    
+    Arguments:
+        db {SQLAlchemy} -- SQLAlchemy config
+    """
     __tablename__ = "object"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=True)
@@ -30,6 +52,12 @@ class Object(db.Model):
 
 
 class ObjectSchema(ma.ModelSchema):
+    """Marshmellow Object Schema
+    
+    Arguments:
+        ma {Marshmellow} -- Marshmellow config
+    """
+
     class Meta:
         model = Object
         fields = ["id", "name", "address", "data_type_id", "current_value"]
@@ -37,12 +65,23 @@ class ObjectSchema(ma.ModelSchema):
 
 
 class DataType(db.Model):
+    """Datatype for database model
+    
+    Arguments:
+        db {SQLAlchemy} -- SQLAlchemy config
+    """
     __tablename__ = "data_type"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=True)
 
 
 class DataTypeSchema(ma.ModelSchema):
+    """Datatype marshmellow schema
+    
+    Arguments:
+        ma {Marshmellow} -- Marshmellow config
+    """
+
     class Meta:
         model = DataType
         sqla_session = db.session

@@ -4,10 +4,15 @@ from config import db
 
 
 class LivingRoomTemperature(AbstractDevice):
+    """Basic livingroom temperature device
+    
+    Arguments:
+        AbstractDevice {abc} -- Abstract device
+    """
+
     def __init__(self, name, address):
         super().__init__(name, address)
         self.SCRIPT_ID = 3  # Manual script id for now
-
 
     def initialize_device_properties(cls):
         cls.PROTOCOL = 'PROTOCOL'
@@ -25,17 +30,19 @@ class LivingRoomTemperature(AbstractDevice):
         cls.MAIN_LOOP_SCHEDULE = 3
 
     def main_loop(cls):
+        """Changes current temperature according to devices located in cls.CONNECTED_DEVICES
+        """
         heating_cooling = Object.query \
-              .filter_by(address=cls.CONNECTED_DEVICES[0]) \
-              .first()
+            .filter_by(address=cls.CONNECTED_DEVICES[0]) \
+            .first()
 
         temperature_target = Object.query \
-                            .filter_by(address=cls.CONNECTED_DEVICES[1]) \
-                            .first()
+            .filter_by(address=cls.CONNECTED_DEVICES[1]) \
+            .first()
 
         myDbObject = Object.query \
-                       .filter_by(address=cls.ADDRESS) \
-                       .first()
+            .filter_by(address=cls.ADDRESS) \
+            .first()
 
         new_temperature = 0
         target = float(temperature_target.current_value)
@@ -57,8 +64,6 @@ class LivingRoomTemperature(AbstractDevice):
         db.session.add(myDbObject)
         db.session.commit()
 
-
     def interaction(cls, args):
         if 'value' in args:
             print(args['value'])
-

@@ -5,6 +5,12 @@ from config import USE_SIMULATION, SIM_CONTROLLER
 
 
 def send_command(id, new_value):
+    """Handle command send by API
+    
+    Arguments:
+        id {[int]} -- Unique identifier of device
+        new_value {[any]} -- The right data for the device
+    """
     obj = Object.query \
         .filter_by(id=id) \
         .first()

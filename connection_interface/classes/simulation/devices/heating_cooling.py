@@ -2,10 +2,15 @@ from classes.simulation.abstract.device import AbstractDevice
 
 
 class HeatingCooling(AbstractDevice):
+    """Basic Heating/cooling device
+    
+    Arguments:
+        AbstractDevice {abc} -- Device abstraction
+    """
+
     def __init__(self, name, address):
         super().__init__(name, address)
         self.SCRIPT_ID = 4  # Manual script id for now
-
 
     def initialize_device_properties(cls):
         cls.PROTOCOL = 'PROTOCOL'
@@ -23,4 +28,3 @@ class HeatingCooling(AbstractDevice):
     def interaction(cls, args):
         if 'value' in args:
             print(args['value'])
-

@@ -5,6 +5,8 @@ import requests
 import json
 
 DATATYPES = [
+    """dict: Dictionary for all known datatypes
+    """
     "1 byte signed integer",  # 1
     "1-bit(boolean)",  # 2
     "1 byte unsigned integer",  # 3
@@ -27,6 +29,8 @@ DATATYPES = [
 ]
 
 CONSUMPTIONTYPES = [
+    """dict: Dictionary for all known consumptiontypes
+    """
     {'name': 'toggle', 'data_type_id': 2},  # 1
     {'name': '1-bit', 'data_type_id': 1},  # 2
     {'name': 'ASCII', 'data_type_id': 4},  # 3
@@ -34,6 +38,8 @@ CONSUMPTIONTYPES = [
 ]
 
 SCRIPTS = [
+    """dict: Dictionary for all known connected scripts for simulation
+    """
     {'name': 'Lamp'},  # 1
     {'name': 'Temperature_target'},  # 2
     {'name': 'Livingroom Temperature'},  # 3
@@ -41,6 +47,8 @@ SCRIPTS = [
 ]
 
 OBJECTS = [
+    """dict: Dictionary for all known objects
+    """
     {'name': 'Badkamer spots', 'address': '0/0/1', 'data_type_id': 2, 'current_value': None, 'script_id': 1},
     {'name': 'Gang lamp', 'address': '0/0/2', 'data_type_id': 2, 'current_value': None, 'script_id': 1},
     {'name': 'Bed left', 'address': '0/0/3', 'data_type_id': 2, 'current_value': None, 'script_id': 1},
@@ -77,7 +85,8 @@ OBJECTS = [
     # RESEARCHDATA
     # Master/slave heating/cooling
 
-    {'name': 'master/slave heating/cooling', 'address': '1/2/0', 'data_type_id': 1, 'current_value': False, 'script_id': 4},
+    {'name': 'master/slave heating/cooling', 'address': '1/2/0', 'data_type_id': 1, 'current_value': False,
+     'script_id': 4},
     {'name': 'temperature target', 'address': '1/2/1', 'data_type_id': 5, 'current_value': 20.00, 'script_id': 2},
 
     # RESEARCHDATA
@@ -231,7 +240,6 @@ if os.path.exists('./app.db'):
 # Create the database
 db.create_all()
 
-# Iterate over the PEOPLE structure and populate the database
 for dataType in DATATYPES:
     dt = DataType(name=dataType)
     db.session.add(dt)
@@ -249,7 +257,8 @@ for obj in OBJECTS:
         spt_id = obj['script_id']
     else:
         spt_id = None
-    o = Object(name=obj['name'], current_value=obj['current_value'], address=obj['address'], data_type_id=obj['data_type_id'], script_id=spt_id)
+    o = Object(name=obj['name'], current_value=obj['current_value'], address=obj['address'],
+               data_type_id=obj['data_type_id'], script_id=spt_id)
 
     db.session.add(o)
 
@@ -290,7 +299,7 @@ for objects in OBJECTS:
 
         # Create usage in API
         usage_request = requests.post(usage_endpoint, {'item_id': item_response['id'],
-                                                       'external_item_id': index+1,
+                                                       'external_item_id': index + 1,
                                                        'consumption_type': 'KILOWATT',
                                                        'consumption_amount': 10,
                                                        'address': OBJECTS[index]['address'],

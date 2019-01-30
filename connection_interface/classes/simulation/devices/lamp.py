@@ -4,10 +4,15 @@ import requests
 
 
 class Lamp(AbstractDevice):
+    """Basic Lamp device
+    
+    Arguments:
+        AbstractDevice {abc} -- Device abstraction
+    """
+
     def __init__(self, name, address):
         super().__init__(name, address)
         self.SCRIPT_ID = 1  # Manual script id for now
-
 
     def initialize_device_properties(cls):
         cls.PROTOCOL = 'PROTOCOL'
@@ -23,10 +28,15 @@ class Lamp(AbstractDevice):
         cls.MAIN_LOOP_SCHEDULE = False
 
     def interaction(cls, args):
+        """ Basic interaction. Checks wether or not the value is correct and creates an event at the API_Endpoint
+        
+        Arguments:
+            args {dictionary} -- Any arguments you may want to send to this device
+        """
         if 'value' in args:
             obj = Object.query \
-                  .filter_by(address=cls.ADDRESS) \
-                  .first()
+                .filter_by(address=cls.ADDRESS) \
+                .first()
             print(args['value'])
             data = 0
             if args['value'] == 'True' or args['value'] == '1' or args['value'] == True or args['value'] == 1:
@@ -38,4 +48,3 @@ class Lamp(AbstractDevice):
             events_endpoint = 'http://172.20.10.3:5000/api/v1/events'
             events_response = requests.post(events_endpoint, data=payload)
             print(events_endpoint)
-

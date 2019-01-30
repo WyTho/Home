@@ -2,10 +2,15 @@ from classes.simulation.abstract.device import AbstractDevice
 
 
 class TemperatureTarget(AbstractDevice):
+    """Basic temperature target device
+    
+    Arguments:
+        AbstractDevice {abc} -- Abstract device
+    """
+
     def __init__(self, name, address):
         super().__init__(name, address)
         self.SCRIPT_ID = 2  # Manual script id for now
-
 
     def initialize_device_properties(cls):
         cls.PROTOCOL = 'PROTOCOL'
@@ -23,4 +28,3 @@ class TemperatureTarget(AbstractDevice):
     def interaction(cls, args):
         if 'value' in args:
             print(args['value'])
-

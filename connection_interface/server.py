@@ -6,11 +6,11 @@ from classes.TCPThread import TCPThread
 from classes.HomeLynkController import HomeLynkController
 from classes.simulation.devices.lamp import Lamp
 
-# Read the objects.yml file to configure the endpoints
 connex_app.add_api('objects.yml')
+"""Add the yml file to the api
+"""
 
 
-# Create a URL route in our application for "/"
 @connex_app.route('/')
 def home():
     """
