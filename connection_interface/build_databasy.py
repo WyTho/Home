@@ -1,6 +1,8 @@
 import os
 from config import db
 from models import Object, ConsumptionType, DataType, Script
+import requests
+import json
 
 DATATYPES = [
     "1 byte signed integer",  # 1
@@ -259,3 +261,40 @@ db.engine.execute('CREATE TABLE `event` ( \
 );')  # Needs to be manual since we don't need it in the API
 
 db.session.commit()
+
+# Lets create all devices at the endpoint
+
+item_endpoint = 'http://172.20.10.3:5000/api/v1/items'
+usage_endpoint = 'http://172.20.10.3:5000/api/v1/usages'
+events_endpoint = 'http://172.20.10.3:5000/api/v1/events'
+
+index = 0
+DO_OBJECTS = {0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8}
+
+for objects in OBJECTS:
+    # Create item in API
+    if index in DO_OBJECTS:
+        payload = {'name': OBJECTS[index]["name"], 'comment': 'test'}
+        item_request = requests.post(item_endpoint, data=payload)
+        print(item_request)
+        item_response = json.loads(item_request.text)
+        print(item_response)
+
+        # Create usage in API
+        usage_request = requests.post(usage_endpoint, {'item_id': item_response['id'],
+                                                       'external_item_id': index+1,
+                                                       'consumption_type': 'KILOWATT',
+                                                       'consumption_amount': 10,
+                                                       'address': OBJECTS[index]['address'],
+                                                       'unit': 'TOGGLE'})
+        usage_response = json.loads(usage_request.text)
+
+    index += 1

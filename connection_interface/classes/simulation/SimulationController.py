@@ -37,10 +37,11 @@ class SimulationController(Thread):
                                    "id": obj.id,
                                    "value": new_value}
                     self.queue.put(json.dumps(current_obj))
+                    device.interaction({'value': new_value})
                 else:
                     print('Unable to interact with device')
             else:
-                print('Unable to interact with device')
+                print('Unable to interact with device #2')
 
     def register_device(self, device):
         if isinstance(device, AbstractDevice):

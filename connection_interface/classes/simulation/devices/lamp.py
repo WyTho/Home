@@ -1,4 +1,6 @@
 from classes.simulation.abstract.device import AbstractDevice
+from models import Object
+import requests
 
 
 class Lamp(AbstractDevice):
@@ -22,5 +24,18 @@ class Lamp(AbstractDevice):
 
     def interaction(cls, args):
         if 'value' in args:
+            obj = Object.query \
+                  .filter_by(address=cls.ADDRESS) \
+                  .first()
             print(args['value'])
+            data = 0
+            if args['value'] == 'True' or args['value'] == '1' or args['value'] == True or args['value'] == 1:
+                data = 1
+            if args['value'] == 'False' or args['value'] == '0' or args['value'] == False or args['value'] == 0:
+                data = 0
+
+            payload = {'usage_id': obj.id, 'data_type': 'TOGGLE', 'data': data}
+            events_endpoint = 'http://172.20.10.3:5000/api/v1/events'
+            events_response = requests.post(events_endpoint, data=payload)
+            print(events_endpoint)
 
